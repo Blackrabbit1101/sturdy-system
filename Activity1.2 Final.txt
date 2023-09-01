@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main()
+{
+    int opt;
+    int number1;
+    int number2;
+    int tot;
+    
+    printf("***************MENU***************");
+    printf("\n ||       Addition 1            ||");
+    printf("\n ||       Substraction 2        ||");
+    printf("\n ||       Multiplication 3      ||");
+    printf("\n ||       Division 4            ||");
+    printf("\n**********************************");
+    
+    
+    
+    printf("\n Enter first number :");
+    scanf ("%d", &number1);
+    
+    printf ("Enter second number :");
+    scanf ("%d", &number2);
+    
+    
+    printf ("\nEnter operator:");
+    scanf ("%d", &opt);
+    
+    
+    
+    if (opt== 1) {
+        tot=number1 + number2;
+        printf("_________________________________");
+        printf("\n         the total is %d     ", tot);
+        printf("\n__________________________________");
+    }
+    else if (opt==2) {
+        tot=number1 - number2;
+        printf("_________________________________");
+        printf("\n         the total is %d     ", tot);
+        printf("\n__________________________________");
+    }
+     else if (opt==3) {
+        tot=number1 * number2;
+        printf("_________________________________");
+       printf("\n         the total is %d     ", tot);
+       printf("\n__________________________________");
+     }
+     else if (opt==4) {
+        tot=number1 / number2;
+        printf("_________________________________");
+        printf("\n         the total is %d     ", tot);
+        printf("\n__________________________________");
+    }
+    else
+    {
+     printf("************************************");
+     printf("\n       Re-run again the code.");
+     printf("\n     And pick the right operator.");
+     printf("\n        ⛔️ Syntax Error ⛔️");    
+     printf("\n************************************");
+    }
+  
+    return 0;
+}
